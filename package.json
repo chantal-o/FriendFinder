@@ -4,8 +4,8 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
-    "env": "^0.0.2",
     "dot": "^1.1.2",
+    "env": "^0.0.2",
     "express": "^4.17.1",
     "path": "^0.12.7"
   },

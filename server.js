@@ -1,19 +1,19 @@
-// Dependency for express module and setting up express app
-var express = require("express");
+// Dependencies
 var app = express();
 var PORT = process.env.PORT || 3000;
 
-// Middleware used to interpret form data coming from client
+// middleware for data inputs
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 
+//built-in middleware function for static files
 app.use(express.static("./app/public"));
 
-// Require route js files and pass express app to them
+// Require routes 
 require("./routing/apiRoutes")(app);
 require("./routing/htmlRoutes")(app);
 
-// Initiate server to begin listening
+// Initiate server 
 app.listen(PORT, function() {
     console.log("Application listening on PORT: " + PORT);
 });

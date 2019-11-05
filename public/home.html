@@ -7,24 +7,29 @@
     
     <!-- Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+     <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
     <title>Friend Finder</title>
 </head>
 <body>
 <div class="mt-3 container-fluid">
    
-    <div class="jumbotron card card-image" style="background-image: url('./assets/images/rainbow-gradient.jpg');">
-        <div class="text-white text-center py-5 px-4">
+    <div class="jumbotron card">
+        <div class="text-blue text-center">
             <div>
             <h1 class="card-title pt-3 mb-5 font-bold display-3"><strong>Friend Finder</strong></h1>
-            <h3 class="mx-5 mb-5">You're one survey away from true friendship... Take our survey to be matched with your new best friend!</h3>
-            <a href="/survey" class="btn btn-outline-white btn-lg"><i class="far fa-edit left"></i> Take the Survey</a>
+            <h3 class="mx-5 mb-5">Find Your Match</h3>
+            <a class="btn btn-primary" href="/survey" role="button">Take The Survey!</a>
             </div>
         </div>
         </div>
+
+
     <!-- display friends array data -->
-    <a href="api/friends">API Friends List</a>
+    <a href="/api/friends">API Friends List</a>
 </div>
 
 

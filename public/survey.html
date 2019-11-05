@@ -10,8 +10,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- JQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
     <title>Survey</title>
     
 </head>
@@ -170,18 +171,14 @@
                     $("#q3").val(),
                     $("#q4").val(),
                     $("#q5").val(),
-                    $("#q6").val(),
-                    $("#q7").val(),
-                    $("#q8").val(),
-                    $("#q9").val(),
-                    $("#q10").val()
+                    
                 ]
             };           
             // POST request t
             
             $.post("/api/friends", newFriend, function(data) {
                 console.log(data);
-                // Append friend match data to modal and show modal
+                // append to modal and display
                 $("#matchName").text(data.name);
                 $("#matchPic").attr("src", data.photo);
                 $("#matchModal").modal("show");

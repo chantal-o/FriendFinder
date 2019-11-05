@@ -7,6 +7,8 @@
     "body-parser": "^1.19.0",
     "client": "file:client",
     "concurrently": "^5.0.0",
+    "dot": "^1.1.2",
+    "env": "0.0.2",
     "express": "^4.17.1",
     "is-empty": "^1.2.0",
     "jsonwebtoken": "^8.5.1",

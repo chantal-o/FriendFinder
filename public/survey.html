@@ -1,0 +1,254 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
+    <title>Survey</title>
+    <!-- Style tag for additional styling -->
+   
+</head>
+
+<body>
+<div class="container z-depth-3">
+    <!-- Form containing input fields and survey questions -->
+    <form class="border border-light p-5 mb-3">
+        <div class="text-center">
+            <h1 class="text-center purple-text"><strong>Friend Finder Survey</strong></h1>
+        </div>
+    
+        <p class="lead my-4">Please provide the following details.</p>
+        
+        <!-- Name and image link inputs -->
+        <label for="userName"><strong>Name</strong> <em>(Required)</em></label>
+        <input type="text" id="userName" class="form-control mb-4" placeholder="Name">
+    
+        <label for="imgLink"><strong>Link to Photo Image</strong> <em>(Required)</em></label>
+        <input type="text" id="imgLink" class="form-control mb-5">
+    
+        <hr>
+
+        <p class="lead my-4">Please select a number between 1 and 5 for the following questions.</p>
+
+        <!-- Survey questions -->
+        <div class="col-lg-6 col-12">
+        <p class="h5">1. I see myself as extraverted, enthusiastic.</p>
+        <select class="browser-default custom-select mb-4" id="q1">
+            <option value="">Choose your answer</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+    
+        <p class="h5">2. I see myself as critical, quarrelsome.</p>
+        <select class="browser-default custom-select mb-4" id="q2">
+            <option value="">Choose your answer</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <p class="h5">3. I see myself as dependable, self-disciplined.</p>
+        <select class="browser-default custom-select mb-4" id="q3">
+            <option value="">Choose your answer</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <p class="h5">4. I see myself as anxious, easily upset.</p>
+        <select class="browser-default custom-select mb-4" id="q4">
+            <option value="">Choose your answer</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <p class="h5">5. I see myself as open to new experiences, complex.</p>
+        <select class="browser-default custom-select mb-4" id="q5">
+            <option value="">Choose your answer</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <p class="h5">6. I see myself as reserved, quiet.</p>
+        <select class="browser-default custom-select mb-4" id="q6">
+            <option value="">Choose your answer</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <p class="h5">7. I see myself as sympathetic, warm.</p>
+        <select class="browser-default custom-select mb-4" id="q7">
+            <option value="">Choose your answer</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <p class="h5">8. I see myself as disorganized, careless.</p>
+        <select class="browser-default custom-select mb-4" id="q8">
+            <option value="">Choose your answer</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <p class="h5">9. I see myself as calm, emotionally stable.</p>
+        <select class="browser-default custom-select mb-4" id="q9">
+            <option value="">Choose your answer</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <p class="h5">10. I see myself as conventional, uncreative.</p>
+        <select class="browser-default custom-select mb-4" id="q10">
+            <option value="">Choose your answer</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        </div>
+        <!-- Submit button -->
+        <button id="add-btn" class="btn btn-info btn-block ripe-malinka-gradient" type="submit">Submit</button>
+
+        <!-- Friend Match Modal -->
+        <div class="modal fade" id="matchModal" tabindex="-1" role="dialog" aria-labelledby="matchModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-notify modal-warning" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title white-text" id="errorModalLabel">You've Been Matched With...</h5>
+              <button type="button" class="close white-text" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h1 class="text-center"><span id="matchName"></span></h1>
+
+              <img alt="Match Photo" id="matchPic">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn white-text ripe-malinka-gradient" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Error Modal -->
+    <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="errorModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h4 class="modal-title w-100" id="errorModalLabel">No Match Found</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+            Please complete all fields before submitting.
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn white-text ripe-malinka-gradient" data-dismiss="modal">Close</button>
+        </div>
+    </div>
+    </div>
+    </div>
+    </form>
+
+    <!-- Links for api data page and home page -->
+    <a href="/api/friends">API Friends List</a> | <a href="/">Home</a>
+</div>
+    <script>
+        // Client side JS to capture form data
+        $("#add-btn").on("click", function(event) {
+            event.preventDefault();
+            // Form validation function to ensure that user provides a name, image link, and answers to the survey questions
+            function checkInput() {
+                var complete = true;
+                $(".form-control").each(function() {
+                    if($(this).val() === "") {
+                        complete = false;
+                    }
+                });
+                $(".custom-select").each(function() {
+                    if($(this).val() === "") {
+                        complete = false;
+                    }
+                });
+                return complete;
+            }
+            // If all fields were completed by the user, create a new object with the data from the survey
+            if(checkInput()) {
+            var newFriend = {
+                name: $("#userName").val().trim(),
+                photo: $("#imgLink").val().trim(),
+                scores: [
+                    $("#q1").val(),
+                    $("#q2").val(),
+                    $("#q3").val(),
+                    $("#q4").val(),
+                    $("#q5").val(),
+                    $("#q6").val(),
+                    $("#q7").val(),
+                    $("#q8").val(),
+                    $("#q9").val(),
+                    $("#q10").val()
+                ]
+            };            
+            // POST request to server that sends submitted form data as an object
+            // Server will then respond with the friend match data
+            $.post("/api/friends", newFriend, function(data) {
+                console.log(data);
+                // Append friend match data to modal and show modal
+                $("#matchName").text(data.name);
+                $("#matchPic").attr("src", data.photo);
+                $("#matchModal").modal("show");
+            });
+        }
+        // If user did not fill in all fields, display error modal
+        else {
+            $("#errorModal").modal("show");
+        }
+        });
+    </script>
+</body>
+</html>

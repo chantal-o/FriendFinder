@@ -11,15 +11,14 @@
     
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <title>Survey</title>
-    <!-- Style tag for additional styling -->
-   
+    
 </head>
 
 <body>
 <div class="container z-depth-3">
-    <!-- Form containing input fields and survey questions -->
+    <!-- Form -->
     <form class="border border-light p-5 mb-3">
         <div class="text-center">
             <h1 class="text-center purple-text"><strong>Friend Finder Survey</strong></h1>
@@ -177,9 +176,9 @@
                     $("#q9").val(),
                     $("#q10").val()
                 ]
-            };            
-            // POST request to server that sends submitted form data as an object
-            // Server will then respond with the friend match data
+            };           
+            // POST request t
+            
             $.post("/api/friends", newFriend, function(data) {
                 console.log(data);
                 // Append friend match data to modal and show modal

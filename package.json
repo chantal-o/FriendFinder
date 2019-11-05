@@ -1,0 +1,28 @@
+{
+  "name": "FriendFinder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "env": "^0.0.2",
+    "dot": "^1.1.2",
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chantal-o/FriendFinder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chantal-o/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/chantal-o/FriendFinder#readme"
+}
